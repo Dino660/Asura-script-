@@ -79,8 +79,17 @@ local all_foods = {
 -- Extra
 client.DevCameraOcclusionMode = "Invisicam"
 client.CameraMaxZoomDistance = math.huge
-for i, v in (getconnections(client.Idled)) do 
-	v:Disable()
+if client.Idled then
+    local connections = getconnections(client.Idled)
+    if connections then
+        for i, v in pairs(connections) do
+            -- tu código aquí
+        end
+    else
+        warn("No se pudieron obtener conexiones de client.Idled")
+    end
+else
+    warn("client.Idled no existe o es nil")
 end
 
 -- Functions
