@@ -80,7 +80,6 @@ local all_foods = {
 client.DevCameraOcclusionMode = "Invisicam"
 client.CameraMaxZoomDistance = math.huge
 
-
 -- Functions
 local moveto, forceusetool, get_floor, fire_click, eatfood, use_food, playernearobj, safestbag, has_item, autowithdraw, gym_road, playerradiuscheck, senkai_road, bankpart, get_strike_power, get_bodycondition, get_strike_speed, on_char_added; do 
 	moveto = function(destination, increment, targetY, postY, upsideDown)
